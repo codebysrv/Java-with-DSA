@@ -9,15 +9,15 @@ public class Main {
 
         LL.addLast(3);
 
-        // LL.addLast(2);
+        LL.addLast(2);
 
-        // LL.addLast(10);
+        LL.addLast(10);
 
         LL.Display();
         LL.removeFirst();
-        // LL.Display();
-        // LL.removeLast();
-        // LL.Display();
+        LL.Display();
+        LL.removeLast();
+        LL.Display();
         LL.Display();
         LL.removeFirst();
         LL.Display();

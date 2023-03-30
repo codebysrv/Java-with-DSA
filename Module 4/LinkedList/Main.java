@@ -18,7 +18,7 @@ public class Main {
         LL.Display();
         LL.removeLast();
         LL.Display();
-        // LL.Display();
+        LL.Display();
         LL.removeFirst();
         LL.Display();
         LL.Display();

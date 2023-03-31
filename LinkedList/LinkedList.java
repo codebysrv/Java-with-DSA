@@ -1,10 +1,16 @@
 package LinkedList;
 
-public class LinkedList {
-    private class Node {
-        private int data;
-        private Node next;
+// CREATING LINKED LIST CLASS WHICH WILL HAVE ALL THE DATA MEMBERS AND MEMBER FUNCTIONS TO PERFORM MANY OPPERATIONS ON LINKED LIST
 
+public class LinkedList {
+
+    // CREATING A PRIVATE NODE CLASS WHICH WILL BE USED TO CREATE AND MANAGE THE
+    // NODES
+    private class Node {
+        private int data; // IT WILL STORE THE DATA OF THE NODE
+        private Node next; // IT WILL BE A POINTER TO THE NEXT NODE INITIALLY NULL
+
+        // CONSTRUCTOR FOR INITIALIZING THE NODE CLASS WHEN THE OPJECT IS CREATED
         public Node(int data) {
             this.data = data;
             next = null;
@@ -14,6 +20,9 @@ public class LinkedList {
     // public LinkedList() {
     // size = 0;
     // }
+
+    // CREATING POINTERS HEAD AND TAIL TO POINT TO THE FIRST AND LAST NODE OF THE
+    // LINKED LIST RESPECTIVELY
 
     private Node head;
     private Node tail;
@@ -26,6 +35,11 @@ public class LinkedList {
     public int sizeOfLinkedList() {
         return size;
     }
+
+    // IMPORTANT METHODS USED IN LINKED LIST
+
+    // 1. addFirst : THIS METHOD IS USED TO ADD NEW NODES ON THE LEFT SIDE OF THE
+    // EXISTING HEAD NODE
 
     public void addFirst(int data) {
         Node newnode = new Node(data);
@@ -41,6 +55,9 @@ public class LinkedList {
 
     }
 
+    // 2. addLast : THIS METHOD IS USED TO ADD NODES TO THE RIGHT SIDE OF THE
+    // EXISTING TAIL NODE
+
     public void addLast(int data) {
         Node newnode = new Node(data);
 
@@ -55,9 +72,8 @@ public class LinkedList {
         }
     }
 
-    /**
-     * 
-     */
+    // 3. removeLast : THIS METHOD IS USED TO REMOVE THE LAST NODE OF THE LINKED
+    // LIST
     public void removeLast() {
         Node temp = head;
 
@@ -80,6 +96,9 @@ public class LinkedList {
 
     }
 
+    // 4. removeFirst : THIS METHOD IS USED TO REMOVE THE FIRST NODE OF THE LINKED
+    // LIST
+
     public void removeFirst() {
         // Node temp = head.next;
         if (head == tail) {
@@ -90,9 +109,8 @@ public class LinkedList {
         }
     }
 
-    /**
-     * 
-     */
+    // 5. Display : THIS METHOD IS USED TO DISPLAY ALL THE DATA CONTAINED IN THE
+    // LINKED LIST
     public void Display() {
         Node temp = head;
         while (temp != null) {

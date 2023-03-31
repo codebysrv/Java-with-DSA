@@ -17,9 +17,6 @@ public class LinkedList {
         }
     }
 
-    // public LinkedList() {
-    // size = 0;
-    // }
 
     // CREATING POINTERS HEAD AND TAIL TO POINT TO THE FIRST AND LAST NODE OF THE
     // LINKED LIST RESPECTIVELY
